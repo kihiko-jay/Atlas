@@ -1,0 +1,30 @@
+{
+  "name": "@atlas/source",
+  "version": "0.0.1",
+  "private": true,
+  "packageManager": "pnpm@10.33.0",
+  "engines": {
+    "node": ">=22",
+    "pnpm": ">=10"
+  },
+  "scripts": {
+    "nx": "nx",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint .",
+    "typecheck": "nx run-many -t typecheck"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "nx"
+    ]
+  },
+  "devDependencies": {
+    "nx": "^23.0.1",
+    "typescript": "~5.9.3",
+    "eslint": "^9.39.4",
+    "typescript-eslint": "^8.62.0",
+    "eslint-config-prettier": "^10.1.8",
+    "prettier": "^3.9.1"
+  }
+}
