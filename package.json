@@ -17,6 +17,7 @@
   "pnpm": {
     "onlyBuiltDependencies": [
       "nx",
+      "sharp",
       "unrs-resolver"
     ]
   },
