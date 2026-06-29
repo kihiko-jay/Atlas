@@ -1,0 +1,9 @@
+import * as Joi from 'joi';
+
+export const envSchema = Joi.object({
+  NODE_ENV: Joi.string().valid('development', 'test', 'production').default('development'),
+  PORT: Joi.number().integer().min(1).max(65535).default(3000),
+  LOG_LEVEL: Joi.string()
+    .valid('trace', 'debug', 'info', 'warn', 'error', 'fatal', 'silent')
+    .default('info'),
+});
